@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    /* Quitar el subrayado al texto de A*/
+     text-decoration: none;
+    /* Cuando pase el cursor salga una manito*/
+     cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    /* display flex y justify-content es para ubicarlo al lado derecho */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-rigth-section{
+    /* Posicionado Horizontamente */
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-rigth-section a{
+     /* Separar las letras y cambiar de color */
+     margin-right: 10px;
+     color: #000000;
+}
+
+
+nav .nav-rigth-section .menu-icon{
+    /* Para pegar la url de la imagen */
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    /* Para evitar que se repita */
+    background-repeat: no-repeat;
+    /* Para que la imagen quede en el centro */
+    background-position: center;
+    /* Se aproxime al tamaño del contenedor */
+    background-size: contain;
+    width: 25px;
+    height :25px;
+}
+
+nav .nav-rigth-section img{
+    /* Para poner la imagen redonda */
+    border-radius: 50%;
+    /* Para separar la imagen del texto porque esta muy pegada */
+    margin-left: 10px;
+}
+
+main{
+    /* Para ponerlo en el centro con un 150px */
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* El auto divide lo que sobra x2 y seimpre lo pone en el centro */
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{
+    width: 300px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+      /* Forma el contenedor de busqueda de google */
+    width: 525px;
+    border-radius: 100px;
+      /* Forma el borde de la busqueda de Google */
+    border: 1px solid #dfe1e5;
+      /* display flex coloca o posiciona el contenido  */
+    display: flex;
+     /* justify-content center es para posicionar el contenido en el centro de la mano de display */
+    justify-content: center;
+    /* Alinea los elementos en el centro */
+    align-items: center;
+ }
+
+main .main-input input{
+    width: 450px;
+    height: 34px;
+      /* Para quitar el borde del contenedor de busqueda */
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover{
+      /* box shadow de la sombra al pasar el cursor en el contenedor de busqueda */
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon{
+    background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* Para que los botones se ponga al costado como vecino de forma horizontal */
+    display: inline-block; 
+}
+
+main .main-buttons button{
+    height: 30px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+     /* Para que se separen un poco uno del otro*/
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001 ;
+    color: #222;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    /* Para que el footer siempre este abajo de la pagina*/
+    position: absolute;
+    bottom: 0;
+    /* Para que se divida en la fracciones que desees en este caso 2 fraciones */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    /* Para poner borde arriba del contenedor */
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    /* Para que el elmento se valla a la derecha o izquierda */
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
