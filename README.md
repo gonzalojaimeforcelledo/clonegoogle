@@ -1,2 +1,2 @@
 # clonegoogle
-Es el clone de google.com
+It's the clone of Google
